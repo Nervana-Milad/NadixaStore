@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T22:05:34.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwBcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T21:59:02.67Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 324,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 330,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

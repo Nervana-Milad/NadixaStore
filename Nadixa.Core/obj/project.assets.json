@@ -551,11 +551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core.csproj",
+      "projectUniqueName": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Nadixa.Core.csproj",
       "projectName": "Nadixa.Core",
-      "projectPath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core.csproj",
+      "projectPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Nadixa.Core.csproj",
       "packagesPath": "C:\\Users\\nervana_melad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core\\obj\\",
+      "outputPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

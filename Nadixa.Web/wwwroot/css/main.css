@@ -2059,6 +2059,19 @@ input.num-product::-webkit-inner-spin-button {
   bottom: 20px;
 }
 
+.block2-shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* דוד ּֿנַ */
+}
+
+.block2-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+}
+
 /*---------------------------------------------*/
 .block2-txt-child1 {
   width: calc(100% - 30px);
@@ -3329,4 +3342,8 @@ input.num-product::-webkit-inner-spin-button {
     padding: 20px;
   }
 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
