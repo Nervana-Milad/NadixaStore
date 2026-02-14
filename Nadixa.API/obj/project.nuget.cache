@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oL6D8nAyjvk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\Nadixa.Core\\Nadixa.API\\Nadixa.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
