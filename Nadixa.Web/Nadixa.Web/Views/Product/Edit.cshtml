@@ -1,0 +1,212 @@
+﻿@model Nadixa.Web.Models.ViewModels.EditViewModel
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<style>
+    .content-wrapper {
+        padding-top: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .card-form {
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        padding: 30px;
+        background-color: #fff;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .image-preview {
+        max-width: 100%;
+        max-height: 300px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+    }
+
+        .image-preview:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+    .btn-primary {
+        min-width: 120px;
+    }
+
+    .btn-secondary {
+        min-width: 120px;
+    }
+
+    .color-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        border: 2px solid #ddd;
+        transition: 0.2s;
+    }
+
+    .btn-check:checked + .color-circle {
+        border: 3px solid #0d6efd;
+        transform: scale(1.1);
+        box-shadow: 0 0 6px rgba(13,110,253,0.5);
+    }
+
+
+    @@media (max-width: 768px) {
+        .image-preview {
+            max-height: 200px;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<div class="content-wrapper">
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-6">
+            <h2 class="fw-bold">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <a class="btn btn-outline-secondary" asp-action="Index" asp-controller="Home">Back to List</a>
+        </div>
+    </div>
+
+    <div class="card-form">
+        <form asp-action="Edit" asp-controller="Product" method="post" enctype="multipart/form-data">
+            <div class="validation-summary mb-4">
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </div>
+
+            <input asp-for="Product.Id" hidden />
+
+            <div class="row g-4">
+                <!-- Left side: form inputs -->
+                <div class="col-lg-7 col-md-12">
+                    <div class="mb-3">
+                        <label asp-for="Product.Name" class="form-label"></label>
+                        <input asp-for="Product.Name" class="form-control form-control-lg" placeholder="Enter product name" />
+                        <span asp-validation-for="Product.Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="Product.CategoryId" class="form-label"></label>
+                        <select asp-for="Product.CategoryId" asp-items="Model.Categories" class="form-select form-select-lg">
+                            <option value="">Select Category</option>
+                        </select>
+                        <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 row g-3">
+                        <div class="col-md-6">
+                            <label asp-for="Product.Price" class="form-label"></label>
+                            <input asp-for="Product.Price" class="form-control form-control-lg" placeholder="Price" />
+                            <span asp-validation-for="Product.Price" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="Product.OldPrice" class="form-label"></label>
+                            <input asp-for="Product.OldPrice" class="form-control form-control-lg" placeholder="Old Price" />
+                            <span asp-validation-for="Product.OldPrice" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Product.StockQuantity" class="form-label"></label>
+                        <input asp-for="Product.StockQuantity" class="form-control form-control-lg" placeholder="Stock Quantity" />
+                        <span asp-validation-for="Product.StockQuantity" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Product.Description" class="form-label"></label>
+                        <textarea asp-for="Product.Description" class="form-control form-control-lg" rows="3" placeholder="Write product description"></textarea>
+                        <span asp-validation-for="Product.Description" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Right side: image preview -->
+                <div class="col-lg-5 col-md-12 text-center">
+                    <div class="mb-3">
+                        <label asp-for="MainImageUrl" class="form-label">Upload Product Image</label>
+                        <input asp-for="MainImageUrl"
+                               type="file"
+                               accept="image/*"
+                               class="form-control form-control-lg"
+                               onchange="previewImage(event)" />
+                    </div>
+
+                    <p class="mb-2 fw-semibold">Image Preview:</p>
+
+                    <img id="imagePreview"
+                         class="image-preview"
+                         src="@(string.IsNullOrEmpty(Model.Product.MainImageUrlPath)
+                                     ? "https://via.placeholder.com/300x300?text=Product+Image"
+                                     : Model.Product.MainImageUrlPath)"
+                         alt="Product Image" />
+
+                    <div>
+                        <div class="mt-4">
+                            <label class="form-label fw-semibold">Available Colors</label>
+
+                            <div class="d-flex flex-wrap gap-3">
+
+                                @* @for (int i = 0; i < Model.Colors.Count; i++)
+                                {
+                                    <div class="text-center">
+                                        <input type="checkbox"
+                                               name="SelectedColorIds"
+                                               value="@Model.Colors[i].Id"
+                                               class="btn-check"
+                                               id="color_@i" />
+
+                                        <label for="color_@i"
+                                               class="color-circle"
+                                               style="background-color:@Model.Colors[i].HexCode"
+                                               title="@Model.Colors[i].Name">
+                                        </label>
+
+                                        <small>@Model.Colors[i].Name</small>
+                                    </div>
+                                } *@
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">Update</button>
+                <a class="btn btn-secondary btn-lg" asp-action="Index" asp-controller="Home">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.tiny.cloud/1/8abcm3nn84cfg2z55dths58k7k2qyknti7duilqnl0het211/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+    <script>
+
+
+        function previewImage(event) {
+            const input = event.target;
+            const reader = new FileReader();
+            reader.onload = function () {
+                document.getElementById('imagePreview').src = reader.result;
+            };
+            if (input.files && input.files[0]) {
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}

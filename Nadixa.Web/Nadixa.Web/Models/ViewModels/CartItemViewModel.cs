@@ -13,6 +13,6 @@
         public int Quantity { get; set; } // How many of this product in the cart
 
         // Optional: total price for this item
-        public decimal TotalPrice => Product.Price * Quantity;
+        public decimal TotalPrice => Product.Product.Price * Quantity;
     }
 }

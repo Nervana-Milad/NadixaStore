@@ -1,4 +1,4 @@
-﻿@model List<Nadixa.Web.Models.ViewModels.ProductViewModel>
+﻿@model IEnumerable<Nadixa.Core.Entities.Product>
 
 @{
     ViewData["Title"] = "Home Page";
@@ -303,6 +303,9 @@
 					<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
 					Search
 				</div>
+				<div>
+					<a class="btn btn-primary" asp-controller="Product" asp-action="Create">Add Product</a>
+				</div>
 			</div>
 
 			<!-- Search product -->
@@ -514,11 +517,11 @@
 
 				<div class="block2 block2-shadow h-100">
 					<div class="block2-pic hov-img0">
-						<img src="@product.MainImageUrl" alt="@product.Name" class="img-fluid"
+						<img src="@product.MainImageUrlPath" alt="@product.Name" class="img-fluid"
 							 style="height:270px; object-fit:cover;">
 
 							@* js-show-modal1                   add this to the class to open the modal*@
-						<a asp-action="ProductDetail" asp-controller="Home" asp-route-id="@product.Id" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04"> 
+						<a asp-action="Detail" asp-controller="Product" asp-route-id="@product.Id" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04"> 
 							Quick View
 						</a>
 					</div>

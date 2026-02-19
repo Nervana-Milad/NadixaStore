@@ -22,12 +22,14 @@ namespace Nadixa.Infrastructure.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ProductColor> ProductColors { get; set; }
+        public DbSet<Color> Colors { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
 
             // ضبط خصائص الأسعار (Decimal) عشان متعملش مشاكل في الداتا بيز
             // بنحدد إن السعر يقبل 18 رقم، منهم 2 عشري
@@ -42,7 +44,6 @@ namespace Nadixa.Infrastructure.Data
             builder.Entity<Cart>()
                 .HasIndex(c => c.UserId)
                 .IsUnique();
-
 
             // فلترة تلقائية (Global Query Filter)
             // أي استعلام هيرجع بس الحاجات اللي مش ممسوحة (IsDeleted = false)

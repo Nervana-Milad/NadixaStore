@@ -20,73 +20,56 @@ namespace Nadixa.Web.Controllers
             _logger = logger;
             _context = context;
         }
-
-        public IActionResult Index()
+        public IActionResult Index(int? categoryId)
         {
-            var products = _context.Products
-            .AsNoTracking()
-            .Include(p => p.Category)
-            .Include(p => p.Images)
-            .Include(p => p.Colors)
-            .Where(p => !p.IsDeleted) // from BaseEntity
-            .Select(p => new ProductViewModel
+            var productQuery = _context.Products.Include(p => p.Category).AsQueryable();
+
+            if (categoryId.HasValue)
             {
-                Id = p.Id,
-                Name = p.Name,
-                Description = p.Description,
-                CategoryName = p.Category != null ? p.Category.Name : string.Empty,
-                Price = p.Price,
-                OldPrice = p.OldPrice,
-                IsFeatured = p.IsFeatured,
+                productQuery = productQuery.Where(p => p.CategoryId == categoryId);
+            }
+
+            var products = productQuery.ToList();
+
+            ViewBag.Categories = _context.Categories.ToList();
+            return View(products);
+            //var products = _context.Products
+            //.AsNoTracking()
+            //.Include(p => p.Category)
+            //.Include(p => p.Images)
+            //.Include(p => p.Colors)
+            //.Where(p => !p.IsDeleted) // from BaseEntity
+            //.Select(p => new ProductViewModel
+            //{
+            //    Id = p.Id,
+            //    Name = p.Name,
+            //    Description = p.Description,
+            //    CategoryName = p.Category != null ? p.Category.Name : string.Empty,
+            //    Price = p.Price,
+            //    OldPrice = p.OldPrice,
+            //    IsFeatured = p.IsFeatured,
 
 
-                // get first image safely
-                // safe main image
-                MainImageUrl = p.Images
-            .Where(i => i.IsMain)
-            .Select(i => i.ImageUrl)
-            .FirstOrDefault() ?? "~/images/bags/no-image.png",
-                ImageUrls = p.Images.Select(i => i.ImageUrl).ToList(),
-                Colors = p.Colors.Select(c => new ColorViewModel
-                {
-                    Name = c.Name,
-                    HexCode = c.HexCode
-                }).ToList()
-            })
-            .ToList();
+            //    // get first image safely
+            //    // safe main image
+            //    MainImageUrl = p.Images
+            //.Where(i => i.IsMain)
+            //.Select(i => i.ImageUrl)
+            //.FirstOrDefault() ?? "~/images/bags/no-image.png",
+            //    ImageUrls = p.Images.Select(i => i.ImageUrl).ToList(),
+            //    Colors = p.Colors.Select(c => new ColorViewModel
+            //    {
+            //        Name = c.Name,
+            //        HexCode = c.HexCode
+            //    }).ToList()
+            //})
+            //.ToList();
 
 
-            return View(products); // always returns a model
+            //return View(products); // always returns a model
         }
         
-        public async Task<IActionResult> ProductDetail(int id)
-        {
-            if(id == null)
-            {
-                return NotFound();
-            }
-            var product = _context.Products.Include(p => p.Category)
-                .Include(p => p.Images)
-                .Include(p => p.Colors)
-                .Select(p => new ProductViewModel
-                {
-                    Id = p.Id,
-                    Name = p.Name,
-                    CategoryName = p.Category.Name,
-                    Description = p.Description,
-                    Price = p.Price,
-                    OldPrice = p.OldPrice,
-                    MainImageUrl = p.MainImageUrl,
-                    ImageUrls = p.Images.Select(i => i.ImageUrl).ToList()
-                })
-                .FirstOrDefault();
-
-            if(product == null)
-            {
-                return NotFound();
-            }
-            return View(product);
-        }
+      
 
 
         public IActionResult Privacy()

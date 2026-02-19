@@ -1,4 +1,6 @@
-﻿using Nadixa.Web.Models.ViewModels;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Nadixa.Core.Entities;
+using Nadixa.Web.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,21 +11,18 @@ namespace Nadixa.Web.Models.ViewModels
 {
     public class ProductViewModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string CategoryName { get; set; } = string.Empty;
-
-        public decimal Price { get; set; }
-        public decimal? OldPrice { get; set; }
-
-        public string MainImageUrl { get; set; }
+        public Product Product { get; set; } = new Product();
+        public IEnumerable<SelectListItem>? Categories { get; set; }
+        public IFormFile MainImageUrl { get; set; }
 
         public bool IsFeatured { get; set; }
-        public bool HasDiscount => OldPrice.HasValue && OldPrice > Price;
+        public bool HasDiscount => Product.OldPrice.HasValue && Product.OldPrice > Product.Price;
 
         public List<string> ImageUrls { get; set; } = new List<string>();
-        public List<ColorViewModel> Colors { get; set; } = new List<ColorViewModel>();
+        //public List<int> SelectedColorIds { get; set; } = new();
+
+        //// ✔️ عرض الألوان
+        //public List<ColorViewModel> Colors { get; set; } = new();
 
     }
 }

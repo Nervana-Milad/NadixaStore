@@ -20,5 +20,9 @@
 	  <ProjectReference Include="..\..\Nadixa.Core\Nadixa.Core.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Migrations\" />
+	</ItemGroup>
+
 	
 </Project>

@@ -12,7 +12,7 @@ using Nadixa.Infrastructure.Data;
 namespace Nadixa.Infrastructure.Migrations
 {
     [DbContext(typeof(NadixaDbContext))]
-    [Migration("20260201064929_Initial")]
+    [Migration("20260218102512_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -237,6 +237,58 @@ namespace Nadixa.Infrastructure.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Nadixa.Core.Entities.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("Nadixa.Core.Entities.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ColorId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("Nadixa.Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -269,6 +321,27 @@ namespace Nadixa.Infrastructure.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Nadixa.Core.Entities.Color", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("HexCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Colors");
+                });
+
             modelBuilder.Entity("Nadixa.Core.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -292,6 +365,9 @@ namespace Nadixa.Infrastructure.Migrations
 
                     b.Property<bool>("IsFeatured")
                         .HasColumnType("bit");
+
+                    b.Property<string>("MainImageUrlPath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -318,35 +394,27 @@ namespace Nadixa.Infrastructure.Migrations
 
             modelBuilder.Entity("Nadixa.Core.Entities.ProductColor", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<int>("ColorId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("HexCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("Id");
+                    b.HasKey("ProductId", "ColorId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("ColorId");
 
                     b.ToTable("ProductColors");
                 });
@@ -436,6 +504,36 @@ namespace Nadixa.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Nadixa.Core.Entities.Cart", b =>
+                {
+                    b.HasOne("Nadixa.Core.Entities.AppUser", "User")
+                        .WithOne("Cart")
+                        .HasForeignKey("Nadixa.Core.Entities.Cart", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Nadixa.Core.Entities.CartItem", b =>
+                {
+                    b.HasOne("Nadixa.Core.Entities.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Nadixa.Core.Entities.Product", "Product")
+                        .WithMany("CartItems")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Nadixa.Core.Entities.Product", b =>
                 {
                     b.HasOne("Nadixa.Core.Entities.Category", "Category")
@@ -449,11 +547,19 @@ namespace Nadixa.Infrastructure.Migrations
 
             modelBuilder.Entity("Nadixa.Core.Entities.ProductColor", b =>
                 {
+                    b.HasOne("Nadixa.Core.Entities.Color", "Color")
+                        .WithMany("ProductColors")
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Nadixa.Core.Entities.Product", "Product")
-                        .WithMany("Colors")
+                        .WithMany("ProductColors")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Color");
 
                     b.Navigation("Product");
                 });
@@ -469,16 +575,34 @@ namespace Nadixa.Infrastructure.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Nadixa.Core.Entities.AppUser", b =>
+                {
+                    b.Navigation("Cart")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Nadixa.Core.Entities.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
             modelBuilder.Entity("Nadixa.Core.Entities.Category", b =>
                 {
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("Nadixa.Core.Entities.Color", b =>
+                {
+                    b.Navigation("ProductColors");
+                });
+
             modelBuilder.Entity("Nadixa.Core.Entities.Product", b =>
                 {
-                    b.Navigation("Colors");
+                    b.Navigation("CartItems");
 
                     b.Navigation("Images");
+
+                    b.Navigation("ProductColors");
                 });
 #pragma warning restore 612, 618
         }
