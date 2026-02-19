@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nadixa.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+493c7bfb4b9feb1b5a3c8a9853d402fbf252f4d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34feaaed3f5f2b0c4554bbcd0750506107b4ff8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nadixa.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nadixa.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

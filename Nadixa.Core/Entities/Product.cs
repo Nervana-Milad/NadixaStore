@@ -18,14 +18,16 @@ namespace Nadixa.Core.Entities
 
         // Foreign Key (ربط المنتج بالقسم)
         public int CategoryId { get; set; }
-        public Category Category { get; set; } = null!;
+        public Category? Category { get; set; }
 
-        public string MainImageUrl { get; set; }
+        public string? MainImageUrlPath { get; set; }
 
         // علاقات (صور وألوان)
         public ICollection<ProductImage> Images { get; set; } = new List<ProductImage>();
         public ICollection<ProductColor> Colors { get; set; } = new List<ProductColor>();
-        public ICollection<CartItem> CartItems { get; set; }
+
+        public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+
 
 
     }

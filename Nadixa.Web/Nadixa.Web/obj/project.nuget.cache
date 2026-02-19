@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z7oMqObqA9o=",
+  "dgSpecHash": "675sOp47mcg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj",
+  "projectFilePath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nervana_melad\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\nervana_melad\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

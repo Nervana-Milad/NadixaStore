@@ -4897,11 +4897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj",
+      "projectUniqueName": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj",
       "projectName": "Nadixa.Web",
-      "projectPath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj",
+      "projectPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj",
       "packagesPath": "C:\\Users\\nervana_melad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Web\\Nadixa.Web\\obj\\",
+      "outputPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4922,11 +4922,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core.csproj": {
-              "projectPath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core\\Nadixa.Core.csproj"
+            "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Nadixa.Core.csproj": {
+              "projectPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Nadixa.Core.csproj"
             },
-            "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Infrastructure\\Nadixa.Infrastructure\\Nadixa.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\nervana_melad\\source\\repos\\Nadixa.Core\\Nadixa.Core\\Nadixa.Infrastructure\\Nadixa.Infrastructure\\Nadixa.Infrastructure.csproj"
+            "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Infrastructure\\Nadixa.Infrastructure\\Nadixa.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Infrastructure\\Nadixa.Infrastructure\\Nadixa.Infrastructure.csproj"
             }
           }
         }

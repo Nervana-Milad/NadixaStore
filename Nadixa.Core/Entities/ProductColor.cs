@@ -9,11 +9,10 @@ namespace Nadixa.Core.Entities
 {
     public class ProductColor : BaseEntity
     {
-        public string Name { get; set; } = string.Empty; // اسم اللون (Red)
-        public string HexCode { get; set; } = string.Empty; // كود اللون (#FF0000) عشان الـ CSS
-
-        // ربط بالمنتج
         public int ProductId { get; set; }
-        public Product Product { get; set; } = null!;
+        public Product Product { get; set; }
+
+        public int ColorId { get; set; }
+        public Color Color { get; set; }
     }
 }
