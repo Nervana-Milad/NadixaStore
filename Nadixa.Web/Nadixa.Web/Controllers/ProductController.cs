@@ -79,7 +79,7 @@ namespace Nadixa.Web.Controllers
                 return NotFound();
             }
 
-            var product = _context.Products.Include(p => p.Category).Include(p => p.Colors).Include(p => p.Images).FirstOrDefault(p => p.Id == id);
+            var product = _context.Products.Include(p => p.Category).Include(p => p.Colors).Include(p => p.Images).Include(p => p.Reviews).FirstOrDefault(p => p.Id == id);
 
             if(product == null)
             {
@@ -178,6 +178,40 @@ namespace Nadixa.Web.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Home");
         }
+
+
+        [HttpPost]
+        public JsonResult AddReview([FromBody]Review review)
+        {
+            if (review == null)
+            {
+                return Json(new { error = "Review data was null" });
+            }
+
+            review.CreatedAt = DateTime.Now;
+            review.UserImage = "/images/avatar-01.jpg";
+            _context.Reviews.Add(review);
+            _context.SaveChanges();
+
+            return Json(new
+            {
+                username = review.UserName,
+                content = review.Content,
+                rating = review.Rating,
+                userImage = review.UserImage
+            });
+        }
+        //public JsonResult AddReview([FromBody] Review review)
+        //{
+
+        //    return Json(new
+        //    {
+        //        username = review.UserName,
+        //        content = review.Content
+        //    });
+        //}
+
+
         private async Task<string> UploadFileToFolder(IFormFile file)
         {
             var inputFileExtension = Path.GetExtension(file.FileName);

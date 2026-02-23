@@ -417,8 +417,8 @@ C:\Users\nervana_melad\source\repos\Nadixa.Core\Nadixa.Core\Nadixa.Web\Nadixa.We
 C:\Users\nervana_melad\source\repos\Nadixa.Core\Nadixa.Core\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\appsettings.json
-C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\Nadixa.Web.staticwebassets.endpoints.json
 C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\Nadixa.Web.staticwebassets.runtime.json
+C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\Nadixa.Web.staticwebassets.endpoints.json
 C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\Nadixa.Web.exe
 C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\Nadixa.Web.deps.json
 C:\Users\nervana_melad\Projects\NadixaStore\Nadixa.Web\Nadixa.Web\bin\Debug\net9.0\Nadixa.Web.runtimeconfig.json

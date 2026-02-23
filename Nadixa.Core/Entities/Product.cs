@@ -27,6 +27,8 @@ namespace Nadixa.Core.Entities
         public ICollection<ProductColor> Colors { get; set; } = new List<ProductColor>();
 
         public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
+
 
 
 

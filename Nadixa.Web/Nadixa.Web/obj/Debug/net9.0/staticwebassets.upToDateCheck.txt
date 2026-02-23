@@ -240,8 +240,10 @@ wwwroot\fonts\Poppins\Poppins-SemiBold.ttf
 wwwroot\fonts\Poppins\Poppins-SemiBoldItalic.ttf
 wwwroot\fonts\Poppins\Poppins-Thin.ttf
 wwwroot\fonts\Poppins\Poppins-ThinItalic.ttf
+wwwroot\images\002b671e-8064-415f-b50d-c228ebae6b36.jfif
 wwwroot\images\330af621-fc31-4db8-96a0-f861ca14ec29.jfif
 wwwroot\images\42ba2bb1-ac4d-4f3d-9367-2d19546039dd.jpg
+wwwroot\images\a9d80897-f996-4650-83dc-371108307946.jfif
 wwwroot\images\about-01.jpg
 wwwroot\images\about-02.jpg
 wwwroot\images\avatar-01.jpg

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nadixa.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34feaaed3f5f2b0c4554bbcd0750506107b4ff8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5f3d8f93670895cd8a61f2a0b3f13810f2c2966")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nadixa.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nadixa.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
