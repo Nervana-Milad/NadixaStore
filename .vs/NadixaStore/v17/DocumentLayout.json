@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA3F35F5-88CB-449A-BB07-EF597624CE4A}|Nadixa.Core\\Nadixa.Core.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA3F35F5-88CB-449A-BB07-EF597624CE4A}|Nadixa.Core\\Nadixa.Core.csproj|solutionrelative:nadixa.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\models\\viewmodels\\editviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\models\\viewmodels\\editviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E362C4-7E8B-41C9-8528-2C69C37D39EC}|Nadixa.API\\Nadixa.API\\Nadixa.API.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.api\\nadixa.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6E362C4-7E8B-41C9-8528-2C69C37D39EC}|Nadixa.API\\Nadixa.API\\Nadixa.API.csproj|solutionrelative:nadixa.api\\nadixa.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,24 +51,8 @@
       "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA3F35F5-88CB-449A-BB07-EF597624CE4A}|Nadixa.Core\\Nadixa.Core.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA3F35F5-88CB-449A-BB07-EF597624CE4A}|Nadixa.Core\\Nadixa.Core.csproj|solutionrelative:nadixa.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\models\\viewmodels\\editviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\models\\viewmodels\\editviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.web\\nadixa.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E8E60B7-3D0F-457D-89D5-8C41E49A7929}|Nadixa.Web\\Nadixa.Web\\Nadixa.Web.csproj|solutionrelative:nadixa.web\\nadixa.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA3F35F5-88CB-449A-BB07-EF597624CE4A}|Nadixa.Core\\Nadixa.Core.csproj|c:\\users\\nervana_melad\\projects\\nadixastore\\nadixa.core\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +82,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.API\\Nadixa.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Nadixa.API\\Nadixa.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.API\\Nadixa.API\\appsettings.json",
+              "RelativeToolTip": "Nadixa.API\\Nadixa.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T11:02:32.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\appsettings.json",
+              "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T11:02:13.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Entities\\Review.cs",
               "RelativeDocumentMoniker": "Nadixa.Core\\Entities\\Review.cs",
@@ -82,25 +115,23 @@
               "RelativeToolTip": "Nadixa.Core\\Entities\\Review.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwBMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T07:10:24.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-22T07:10:24.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Nadixa.Core\\Entities\\Product.cs",
               "ToolTip": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Entities\\Product.cs",
               "RelativeToolTip": "Nadixa.Core\\Entities\\Product.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T09:41:02.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T09:41:02.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Views\\Product\\Detail.cshtml",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Views\\Product\\Detail.cshtml",
@@ -108,12 +139,11 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Views\\Product\\Detail.cshtml",
               "ViewState": "AgIAAMIBAAAAAAAAAADwv8gBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-18T07:28:44.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T07:28:44.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
@@ -121,12 +151,11 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Controllers\\ProductController.cs",
               "ViewState": "AgIAALYAAAAAAAAAAAAIwLcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T09:08:55.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T09:08:55.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "ProductViewModel.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\ProductViewModel.cs",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\ProductViewModel.cs",
@@ -134,12 +163,11 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\ProductViewModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T08:37:13.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-22T08:37:13.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Views\\Shared\\_Layout.cshtml",
@@ -147,12 +175,11 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAG8AAAAAAAAAAAAAAH4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-22T09:52:45.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-22T09:52:45.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
@@ -160,12 +187,11 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Controllers\\CartController.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAmwC8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-14T21:59:02.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-14T21:59:02.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Views\\Product\\Create.cshtml",
@@ -173,12 +199,11 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Views\\Product\\Create.cshtml",
               "ViewState": "AgIAAJEAAAAAAAAAAAAuwJ0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-17T09:37:02.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T09:37:02.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "EditViewModel.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\EditViewModel.cs",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\EditViewModel.cs",
@@ -186,24 +211,24 @@
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\EditViewModel.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T09:16:58.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T09:16:58.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Nadixa.Web\\Nadixa.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAkCAAAAAAAAAAAowA8CAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAAAAgCAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-17T09:15:00.824Z"
+              "WhenOpened": "2026-02-17T09:15:00.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Controllers\\HomeController.cs",
@@ -215,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Core\\Entities\\Cart.cs",
               "RelativeDocumentMoniker": "Nadixa.Core\\Entities\\Cart.cs",
@@ -227,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CartItemViewModel.cs",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\CartItemViewModel.cs",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Models\\ViewModels\\CartItemViewModel.cs",
@@ -239,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nervana_melad\\Projects\\NadixaStore\\Nadixa.Web\\Nadixa.Web\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "Nadixa.Web\\Nadixa.Web\\Views\\Cart\\Index.cshtml",
